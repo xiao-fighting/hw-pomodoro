@@ -5,8 +5,8 @@
         <div class="col-8 col-md-10">
           <b-form-input v-model="newtodo" class="newtodo"></b-form-input>
         </div>
-        <b-btn variant="success" @click="addTodo" class="col-2 col-md-1 px-0 addtodo">新增</b-btn>
-        <b-btn variant="primary" @click="clearNewtodo" class="col-2 col-md-1 px-0">清空</b-btn>
+        <b-btn variant="warning" @click="addTodo" class="col-2 col-md-1 px-0 addtodo">新增</b-btn>
+        <b-btn variant="info" @click="clearNewtodo" class="col-2 col-md-1 px-0">清空</b-btn>
       </div>
     </div>
     <b-table-simple>

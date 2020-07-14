@@ -15,6 +15,7 @@ import { faCheckCircle, faPencilAlt, faTimes, faUndo, faSave, faPlay, faPause, f
 
 import draggable from 'vuedraggable'
 import RadialProgressBar from 'vue-radial-progress'
+import VueSweetalert2 from 'vue-sweetalert2'
 
 library.add(faCheckCircle, faPencilAlt, faTimes, faUndo, faSave, faPlay, faPause, faStepForward, faHeadphones, faVolumeMute, faPlusCircle, faCog, faHome)
 // 註冊元件
@@ -23,6 +24,7 @@ Vue.component('draggable', draggable)
 Vue.component('RadialProgressBar', RadialProgressBar)
 
 Vue.config.productionTip = false
+Vue.use(VueSweetalert2)
 
 new Vue({
   router,

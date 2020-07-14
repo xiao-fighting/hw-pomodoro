@@ -21,7 +21,7 @@
       <b-btn variant="danger" v-if="status ==1" @click="pause">
         <font-awesome-icon :icon="['fas','pause']"></font-awesome-icon>
       </b-btn>
-      <b-btn variant="warning" v-if="current.length > 0 ||todos.length > 0" @click="finish(true)">
+      <b-btn variant="warning" class="text-white" v-if="current.length > 0 ||todos.length > 0" @click="finish(true)">
         <!-- @click="finish(true) 不會撥音樂 -->
         <font-awesome-icon :icon="['fas','step-forward']"></font-awesome-icon>
       </b-btn>
@@ -134,27 +134,29 @@ export default {
       this.$store.commit('finish')
 
       if (!skip) {
+      // 判斷 如果 skip=== false
         // 如果不是跳過，要撥放鈴聲
       //  當鈴聲響起時，背景音樂要暫停
         this.audio01.pause()
-        this.bgmusicopen = false
         const audio = new Audio()
         audio.src = './alarms/' + this.alarm
         audio.play()
-        // 下列程式碼沒有成功，但是 alert()則成功
-        // Uncaught TypeError: Cannot read property 'play' of undefined
-        // audio.onended = function () {
-        //   setTimeout(() => {
-        //     this.audio.play()
-        //   }, 100)
-        // }
+        // onended 事件在視頻/音頻（audio/video）播放結束時觸發
+        // 設置一個變數為這個整個vue的this
+        // 因為 setTimeout 的this 可能是別的 this
+        const _this = this
+        audio.onended = () => {
+          setTimeout(() => {
+            _this.audio01.play()
+          }, 100)
+        }
       }
 
       if (this.todos.length > 0) {
         this.start()
       } else {
         setTimeout(() => {
-          alert('恭喜~ 事情做完了~')
+          this.$swal('恭喜~ 事情做完了~ ^ ^')
         }, 100)
       }
     },
