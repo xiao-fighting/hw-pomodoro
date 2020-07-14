@@ -15,7 +15,7 @@
 
     <h3>{{timetext}}</h3>
     <div>
-      <b-btn variant="primary" v-if="status !==1" @click=start>
+      <b-btn variant="info" v-if="status !==1" @click=start>
         <font-awesome-icon :icon="['fas','play']" ></font-awesome-icon>
       </b-btn>
       <b-btn variant="danger" v-if="status ==1" @click="pause">
