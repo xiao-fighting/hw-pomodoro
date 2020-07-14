@@ -156,7 +156,11 @@ export default {
         this.start()
       } else {
         setTimeout(() => {
-          this.$swal('恭喜~ 事情做完了~ ^ ^')
+          // this.$swal('恭喜~ 事情做完了~ ^ ^')
+          this.$swal.fire({
+            icon: 'success',
+            text: '恭喜~ 事情做完了~ ^ ^'
+          })
         }, 100)
       }
     },

@@ -58,7 +58,6 @@ export default {
     alarm () {
       return this.$store.getters.alarm
     }
-
   },
   methods: {
     selectAlarm (item) {

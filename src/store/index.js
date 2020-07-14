@@ -49,7 +49,6 @@ export default new Vuex.Store({
     bgmusic (state) {
       return state.bgmusic
     }
-
   },
   // 修改狀態的 function
   mutations: {
