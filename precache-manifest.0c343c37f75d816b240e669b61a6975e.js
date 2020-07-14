@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "alarms/直到世界的盡頭.mp3"
   },
   {
-    "revision": "f8adbc96e1493068645e",
+    "revision": "e9ab313a405d2224d942",
     "url": "css/app.64792667.css"
   },
   {
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/nocolor.png"
   },
   {
-    "revision": "2d9e71b039ba6c6ea43e9f243dbb439a",
+    "revision": "66fdb652ede1d1a634a4ad6fc65ff724",
     "url": "index.html"
   },
   {
-    "revision": "f8adbc96e1493068645e",
-    "url": "js/app.cde0acd6.js"
+    "revision": "e9ab313a405d2224d942",
+    "url": "js/app.97c6743d.js"
   },
   {
     "revision": "39a43e50a2e7ef1b2d85",
