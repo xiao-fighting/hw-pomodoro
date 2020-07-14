@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["notfound"],{9703:function(n,e,t){"use strict";t.r(e);var r=function(){var n=this,e=n.$createElement;n._self._c;return n._m(0)},u=[function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[t("h1",[n._v("404 找不到")])])}],c=t("2877"),l={},o=Object(c["a"])(l,r,u,!1,null,null,null);e["default"]=o.exports}}]);
+//# sourceMappingURL=notfound.a76bbf5b.js.map
